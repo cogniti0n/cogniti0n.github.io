@@ -153,4 +153,7 @@ R_S(F)\le\sqrt{\frac{2M^2 \log |F|}{n}}
 
 Which corresponds to the $\sqrt{p/n}$ in the discretization bound. 
 
-*proof. TODO*
+_proof_. TODO
+
+## References
+[1] Tengyu Ma, Lecture notes for "CS229M (Machine Learning Theory)"

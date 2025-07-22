@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Computation, Learning, and Physics! # the main title
 
-tagline: All things computation, (machine) learning, and physics. # it will display as the subtitle
+tagline: All things computation, (machine) learning, and physics. Sometimes music. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A pseudorandom blog on all things computation, (machine) learning, and physics.
@@ -98,7 +98,7 @@ theme_mode: dark # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "assets/img/johncoltrane.jpeg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
