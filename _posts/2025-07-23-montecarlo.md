@@ -130,5 +130,5 @@ p(x'|x_1)=\mathrm{min}\left[1,\frac{p(x')}{p(x_1)}\right]
 If we drop the sample from the initial burning period ($ \sim 1000$), then we end up with samples following the probability distribution $p$.
 
 ## References
-[1] Ryu, Ernest K. 2024. Lecture slides on "Mathematical Foundations of Deep Neural Networks, Spring 2024".
+[1] Ryu, Ernest K. 2024. Lecture slides on "Mathematical Foundations of Deep Neural Networks, Spring 2024". \
 [2] Jo, Junghyo. 2025. Lecture notes on "Computation, Learning, and Physics, Spring 2025".
