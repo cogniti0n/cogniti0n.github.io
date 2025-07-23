@@ -156,4 +156,4 @@ Which corresponds to the $\sqrt{p/n}$ in the discretization bound.
 _proof_. TODO
 
 ## References
-[1] Tengyu Ma, Lecture notes for "CS229M (Machine Learning Theory)"
+[1] Ma, Tengyu. 2022. Lecture notes for CS229M (Machine Learning Theory)
