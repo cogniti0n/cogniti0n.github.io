@@ -12,6 +12,7 @@ $$
     \def\argmin{\mathop{\mathrm{argmin}}}
     \def\argmax{\mathop{\mathrm{argmax}}}
     \def\expectation{\mathop{\mathbb{E}}}
+    \def\R{\mathbb{R}}
 $$
 
 Before, we bounded the excess risk by
@@ -70,7 +71,7 @@ Therefore, the Rademacher complexity of the family of loss functions are related
 >**Lemma** Supremum and expectation value.
 >
 >$$
-\sup_u \mathop{\mathbb{E}}_v g(u,v) \le \sup_u \mathbb{E}_v \left[ \sup_{\tilde{u}} g(\tilde{u},v) \right] = \mathbb{E}_v \left[ \sup_{\tilde{u}} g(\tilde{u},v) \right]
+\sup_u \expectation_v \, g(u,v) \le \sup_u \mathbb{E}_v \left[ \sup_{\tilde{u}} g(\tilde{u},v) \right] = \mathbb{E}_v \left[ \sup_{\tilde{u}} g(\tilde{u},v) \right]
 >$$
 
 _proof_. The first inequality is trivial. The second equality holds because the term is independent of $u$.
@@ -113,7 +114,7 @@ By bounding the maximum excess risk, we first removed $\mathbb{E}f$ (gained tran
 R_S(F)\equiv \expectation_{\{\sigma_i\}}\left[ \sup_{f \in F} \frac{1}{n} \sum_i \sigma_i f(z_i) \right]
 >$$
 
-where $$S = \{ z_1,\dots,z_n \}$$. Then, we see that $\expectation\left[R_S(F)\right] =R_n(F)$, and just like we bounded the excess risk by using concentration inequalities, we can bound the empirical Rademacher complexity. Before we do that, we first show that we can remove the expectation value with respect to $z_i$ in Eq. (1).
+where $$S = \{ z_1,\dots,z_n \}$$. Then, we see that $\expectation\left[R_S(F)\right] =R_n(F)$, and just like we bounded the excess risk by using concentration inequalities, we can bound the empirical Rademacher complexity. Before we do that, we first remove the expectation with respect to $z_i$ in Eq. (1).
 
 >**Theorem** Suppose, $\forall f \in F$, $0 \le f(x) \le 1$. Then, with probability at least $1 -\delta$ over the randomness of $z_1,\dots,z_n$, 
 >
