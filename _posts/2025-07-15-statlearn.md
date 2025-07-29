@@ -97,24 +97,11 @@ The goal of learning theory in this sense is to find an $\varepsilon$ that is as
 
 An algorithm is called _universally consistent_ if for all all probability distributions $p$ on $(x,y)$, $\mathcal{A}$ is consistent in expectation for the distribution $p$. Most often, we want to study uniform consistency within a class $\mathcal{P}$ of distributions satisfying some regularity property. Therefore, we aim at finding an algorithm
 
-
 $$
 \mathcal{A} = \argmin \, \sup_{p \in \mathcal{P}} \left\{ \expectation \left[ L\left(\mathcal{A}(\mathcal{D})\right) - L^* \right] \right\}
 $$
 
 and the corresponding risk is called the _minimax risk_. We want to bound the excess risk so esimate the minimax risk.
-
-## "No Free Lunch" Theorems
-
-The essence of 'no free lunch' theorems is that there is no optimal learning algorithm for all distributions. For a fixed data size $n$, there exists a data distribution $p$ that makes the algorithm useless.
-
-> **Proposition** (No free lunch, fixed $n$) Consider a binary classification with $0-1$ loss and $X$ infinite. Let $\mathcal{P}$ denote the set of all probability distributions on $X \times \{ 0,1 \}$. For any $n > 0$ and any learning algorithm $\mathcal{A}$, 
->
-> $$
-\sup_{p \in \mathcal{P}} \left\{ \expectation\left[ L \left( \mathcal{A}(\mathcal{D}) \right) \right] - L^* \right\} \ge 1/2
-> $$
-
-_proof_. TODO
 
 ## References
 [1] Bach, Francis. 2024. Learning Theory from First Principles. MIT Press.
