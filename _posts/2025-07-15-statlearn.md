@@ -2,7 +2,7 @@
 title: Statistical Learning Theory
 date: 2025-07-15 23:00:00 +0800
 description: Preliminaries to Supervised Learning Theory - Statistical Learning Theory
-categories: [machine-learning-deep-learning, ML Theory (C229M T. Ma)]
+categories: [machine-learning-deep-learning, ml-theory]
 tags: [mldl]
 math: true
 toc: false

@@ -2,7 +2,7 @@
 title: The Rademacher Complexity
 date: 2025-07-17 20:00:00 +0800
 description: Part 4 of notes on C229M. Bounding the excess risk using the Rademacher complexity.
-categories: [machine-learning-deep-learning, ML Theory (C229M T. Ma)]
+categories: [machine-learning-deep-learning, ml-theory]
 tags: [mldl]
 math: true
 toc: false
