@@ -1,6 +1,6 @@
 ---
 title: Inverse Variance-Flatness Relation in SGD
-date: 2025-07-25 20:00:00 +0800
+date: 2025-07-26 20:00:00 +0800
 description: Summary of Feng, et al. 2021. Proc. Natl. Acad. Sci. U. S. A. 118 (9)
 categories: [machine-learning-deep-learning, paper-reading]
 tags: [paper-reading]
