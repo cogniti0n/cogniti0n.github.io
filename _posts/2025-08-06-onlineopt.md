@@ -43,6 +43,16 @@ x_{t+1} = \Pi_\mathcal{X} (x_t - \eta_t \nabla f_t(x_t))
 $$\Pi_\mathcal{X}(y) =  \min_{x \in \mathcal{X}} || x-y ||$$
 .
 
+We first assume that the feasible set $F$ has bounded diameter (i.e., there exists some $D$ such that $\vert x-y \vert \le D$ for all  $x,y \in F$) and $\vert \nabla f_t(x) \vert_\infty$ is bounded for all $t$ and $x$. Then the following theorem holds.
+
+> **Theorem** If the step size is chosen $\eta_t = 1/\sqrt{t}$, then the regret of greedy projection is bounded
+>
+> $$
+R(T) \le \frac{ \vert F \vert^2 \sqrt{T}}{2} + \left( \sqrt{T} - \frac{1}{2}\right) \vert \nabla f \vert^2
+> $$
+>
+> where $\vert \nabla f \vert = \sup_{x,t} \vert \nabla f_t(x) \vert$.
+
 ## References
 [1] Zinkevich, Martin A. 2003. “Online Convex Programming and Generalized Infinitesimal Gradient Ascent.” International Conference on Machine Learning, August, 928–36. \
 [2] Reddi, Sashank J., Satyen Kale, and Sanjiv Kumar. 2019. “On the Convergence of Adam and Beyond.” arXiv [Cs.LG]. arXiv. http://arxiv.org/abs/1904.09237.
