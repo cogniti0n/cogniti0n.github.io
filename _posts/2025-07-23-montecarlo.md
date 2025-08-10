@@ -3,7 +3,7 @@ title: Basics of Monte-Carlo
 date: 2025-07-23 11:33:00 +0800
 description: Basics and methods in MC / Markov-chain Monte Carlo
 categories: [math-statistics]
-tags: [monte-carlo]
+tags: [lecture-notes]
 math: true
 toc: false
 ---

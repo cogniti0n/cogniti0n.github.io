@@ -3,7 +3,6 @@ title: Online Optimization Setup
 date: 2025-08-06 05:50 +0800
 description: Basic setup for online (convex) optimization and regret analysis.
 categories: [optimization, ml-optimization]
-tags: [online-learning]
 math: true
 toc: false
 ---

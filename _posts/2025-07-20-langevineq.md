@@ -3,7 +3,6 @@ title: Langevin Equation for Brownian Motions
 date: 2025-07-20 20:00:00 +0800
 description: Solving a simple Langevin equation for Brownian motions.
 categories: [physics, statistical-physics]
-tags: [langevin-equation]
 math: true
 toc: false
 ---

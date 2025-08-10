@@ -3,7 +3,7 @@ title: Nonexpansiveness and Fixed-Point Operations
 date: 2025-08-06 05:50 +0800
 description: Nonexpansive operators and fixed-point methods for optimization.
 categories: [optimization, convex-optimization]
-tags: [fixed-point]
+tags: [lecture-notes]
 math: true
 toc: false
 ---

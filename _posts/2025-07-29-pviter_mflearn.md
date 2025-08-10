@@ -3,7 +3,6 @@ title: Policy/Value Iteration, Model-Free Learning
 date: 2025-07-29 20:00:00 +0800
 description: Finding the solution to Bellman optimality equations.
 categories: [reinforcement-learning]
-tags: [rl]
 math: true
 toc: false
 ---

@@ -1,5 +1,5 @@
 ---
-title: Flatter Minima & Smaller Weight Norm Effects on Generalization
+title: Generalization Gap Analysis Using Activity-Weight Duality
 date: 2025-08-07 05:50 +0800
 description: Summary of Feng, Yu, et al. 2023. Nat. Mach. Intell. 5 (8) 908–18.
 categories: [machine-learning-deep-learning, deep-learning]
