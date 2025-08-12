@@ -1,5 +1,5 @@
 ---
-title: Deep Neural Networks and Overparameterization In Optimziation
+title: Deep Neural Networks and Overparameterization In Optimiziation
 date: 2025-08-08 05:50 +0800
 description: Some non-related topics on deep learning and optimization.
 categories: [optimization, ml-optimization]
