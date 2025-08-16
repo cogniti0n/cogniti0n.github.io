@@ -72,35 +72,22 @@ $$
 f_* (x') \in \argmin_{z \in \R} \left\{  \expectation\left[ (y- \expectation\left[y|x=x'\right]) \right] + (z - \expectation\left[y|x=x'\right])\right\}
 $$
 
-## Statistical Learning Theory
+## PAC Learning
 
-We generally define the notion of statistical learning theory. Given data $\mathcal{D} = \{ (x_1,y_1),\dots,(x_n,y_n) \}$, obtained i.i.d. from some random distribution $p$, we want to find a mapping $\mathcal{A}$ from $\mathcal{D}$ to a function (or hypothesis) from $X$ to $Y$ that minimized the excess expected risk
+Our goal, in traditional statistical learning theory, is to bound the excess risk. The PAC learning framework lets us formulate a rigorous way of bounding errors.
 
-$$
-L\left(\mathcal{A}(\mathcal{D})\right) - L^*
-$$
+> **Definition** (PAC-learning) A hypothesis class $\mathcal{H}$ is said to be PAC-learnable if there exists an algorithm $\mathcal{A}$ and a polynomial function $poly(\cdot,\cdot,\cdot,\cdot)$ such that for any $\varepsilon > 0$ and $\delta > 0$, for all distributions $\mathcal{D}$ on $X$ and for any target hypothesis $h \in \mathcal{H}$, the following holds for any sample size $m \ge poly(1/\varepsilon,1/\delta,n,size(h))$
+>
+> $$
+\mathop{\mathrm{Pr}}_{\theta \sim \mathcal{D}^m} \, [ L(h_\theta) \le \varepsilon ] \ge 1-\delta
+> $$
+>
+> If $\mathcal{A}$ runs in $poly(1/\varepsilon,1/\delta,n,size(c))$, then $\mathcal{H}$ is said to be efficiently PAC-learnable. When such an algorithm $\mathcal{H}$ exists, it is called a PAC-learning algorithm.
 
-when $p$ is unknown. Since $\mathcal{D}$ is random, we need to deal with such randomness. One way is to take the expectation with respect to the randomness and see if the excess risk goes to zero as $n \to \infty$, i.e.,
+In a PAC-learning situation, the training and test examples are drawn from the same distribution $\mathcal{D}$, but we do not make further assumptions about $\mathcal{D}$.
 
-$$
-\lim_{n \to \infty} \left[ \expectation \left[ L\left(\mathcal{A}(\mathcal{D})\right) \right] - L^* \right] = 0
-$$
-
-Another way to view this problem is _probably approximately correct (PAC) learning_. For a given $\delta \in (0,1)$ and $\varepsilon > 0$,
-
-$$
-\mathrm{Pr}\left[ L\left(\mathcal{A}(\mathcal{D})\right) - L^* \le \varepsilon \right] \le 1 - \delta
-$$
-
-The goal of learning theory in this sense is to find an $\varepsilon$ that is as small as possible. 
-
-An algorithm is called _universally consistent_ if for all all probability distributions $p$ on $(x,y)$, $\mathcal{A}$ is consistent in expectation for the distribution $p$. Most often, we want to study uniform consistency within a class $\mathcal{P}$ of distributions satisfying some regularity property. Therefore, we aim at finding an algorithm
-
-$$
-\mathcal{A} = \argmin \, \sup_{p \in \mathcal{P}} \left\{ \expectation \left[ L\left(\mathcal{A}(\mathcal{D})\right) - L^* \right] \right\}
-$$
-
-and the corresponding risk is called the _minimax risk_. We want to bound the excess risk so esimate the minimax risk.
+Then naturally there are two ways of viewing statistical learning algorithms. One is PAC-learning mentioned above, and another is bounding the expectation of the risk. In most cases, one bound can be converted to another in a consise manner - use concentration inequalities, that bound the randomness of a variable with respect to the expectation, e.g., the Hoeffding inequality.
 
 ## References
-[1] Bach, Francis. 2024. Learning Theory from First Principles. MIT Press.
+[1] Bach, F. (2024). Learning theory from first principles. MIT Press. \
+[2] Mohri, M., Rostamizadeh, A., & Talwalkar, A. (2018). Foundations of machine learning (2nd ed.). MIT Press.
