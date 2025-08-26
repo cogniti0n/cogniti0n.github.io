@@ -10,7 +10,7 @@ toc: false
 
 ## Some Minima are Better Than Others
 
-In the overparameterized regime of deep learning, there are many local minima that fit the training data equally well. Out of those local minima, the consensus is that 1) flat minima (measured roughly using the eigenvalues of the Hessian) and 2) small-weight norm solutions generalize well. However, the problem with measuring the flatness of minima is that it differs for different parameterizations. Indeed, given two parameters related by $\theta = g(\eta)$, the Hessian for the loss function $L$ is related by
+In the overparameterized regime of deep learning, there are many local minima that fit the training data equally well. Out of those local minima, the consensus is that first, flat minima (measured roughly using the eigenvalues of the Hessian) and second, small-weight norm solutions generalize well. However, the problem with measuring the flatness of minima is that it differs for different parameterizations. Indeed, given two parameters related by $\theta = g(\eta)$, the Hessian for the loss function $L$ is related by
 
 $$
 (\nabla^2 L_\eta) (\eta) = (\nabla g)(\eta)^\top (\nabla^2 L)\left(g(\eta)\right)(\nabla g)(\eta)
@@ -18,17 +18,17 @@ $$
 
 And therefore the flatness depends on what parameterization we use - this suggests that a more robust way of categorizing 'better minima' is required.
 
-Here the authors find connections between the generalization gap and flatness/weight norm using a techique called _activity-weight duality_. 
+Here the authors find connections between the generalization gap and flatness/weight norm using a techique called _activity-weight duality_.
 
 ## Activity-Weight Duality
 
 Denote an $S$-layer fully connected neural network's weights as $W = (w^1, \dots, w^S)$, and assume that the training and test datasets are fixed, then the generalization gap is defined as
 
 $$
-\Delta l(W) = \langle l_k \rangle_{k \in D_\text{te}} - \langle l_k \rangle_{k \in D_\text{tr}}
+\Delta l(W) = \langle l_k \rangle _{k \in D_\text{te}} - \langle l_k \rangle _{k \in D_\text{tr}}
 $$
 
-The main idea is, given $W$ and training data $x$, test data $x'$, is to find a dual weight $W'$ that satisfies $l(x',W) = l(x,W')$. Then we can analyze the loss landscape dependence on the weight $W$ while keeping data $x$ fixed. 
+The main idea is, given $W$ and training data $x$, test data $x'$, is to find a dual weight $W'$ that satisfies $l(x',W) = l(x,W')$. Then we can analyze the loss landscape dependence on the weight $W$ while keeping data $x$ fixed.
 
 For a single layer $s-1$ and $s$, our goal is to find $w'$ such that
 
@@ -64,7 +64,7 @@ $$
 
 Now, we observe that $\sigma_{w,n}$ corresponds to the weight norm and $\sigma_{g,n}$ corresponds to the sharpness of the loss function. Therefore, the generalization gap is codetermined by these two factors.
 
-
 ## References
+
 [1] Dinh, Laurent, Razvan Pascanu, Samy Bengio, and Yoshua Bengio. 2017. “Sharp Minima Can Generalize for Deep Nets.” arXiv [Cs.LG]. arXiv. http://arxiv.org/abs/1703.04933. \
 [2] Feng, Yu, Wei Zhang, and Yuhai Tu. 2023. “Activity–Weight Duality in Feed-Forward Neural Networks Reveals Two Co-Determinants for Generalization.” Nature Machine Intelligence 5 (8): 908–18.

@@ -45,10 +45,11 @@ If $T$ is nonempty, then $\mathrm{Fix}\,T$ is closed and convex. A fixed-point o
 For contractive operators, the fixed point operation converges due to the Banach fixed-point theorem. We want to relax the contractive condition into an averaged condition.
 
 > **Theorem** Let $T : \R^n \to \R^n$ be a $\theta$-averaged operator with $\theta \in (0,1)$, and $\mathrm{Fix}\,T \ne \emptyset$. Then the following statements hold.
-> - The fixed point operation with any $x^0$ converges to some fixed point $x^\star \in \mathrm{Fix}\,T$. 
+>
+> - The fixed point operation with any $x^0$ converges to some fixed point $x^\star \in \mathrm{Fix}\,T$.
 > - $\mathrm{dist}(x^k, \mathrm{Fix}\,T)$, $\| x^{k+1}-x^k \|$, and $\| x^k - x^\star \|$ for any fixed point $x^\star$ are monotonically nonincreasing with $k$.
-> - $\mathrm{dist}(x^k, \mathrm{Fix}\,T) \to 0$ and 
-> 
+> - $\mathrm{dist}(x^k, \mathrm{Fix}\,T) \to 0$ and
+>
 > $$
 \| x^{k+1} - x^k \|^2 \le \frac{\theta}{(k+1)(1-\theta)} \mathrm{dist}^2(x^0,\mathrm{Fix}\,T) = O(1/k)
 > $$
@@ -77,7 +78,7 @@ $$
 \sum^\infty_{i=0} S^i < \infty
 $$
 
-and therefore, $S^i \to 0$. 
+and therefore, $S^i \to 0$.
 
 Now we prove the actual theorem.
 
@@ -109,7 +110,6 @@ $$
 \| x^{k+1}-x^k \| = \| Tx^k-Tx^{k-1} \| \le \| x^k-x^{k-1} \|
 $$
 
-
 Finally sum both side of the inequality to get
 
 $$
@@ -122,10 +122,11 @@ $$
 (k+1) \| x^{k+1}-x^\star \|^2 \le \sum^k_{j=0} \| Tx^j - x^j \|^2 \le \frac{\theta}{1-\theta} \| x^0-x^\star \|^2  - \frac{\theta}{1-\theta} \| x^{k+1} - x^\star \|^2
 $$
 
-We drop the last term. 
+We drop the last term.
 
 To prove convergence, we follow these steps.
-- Consider any $\tilde{x}^\star \in \mathrm{Fix}\,T$. Then $x^0,\dots$ lie within the compact set 
+
+- Consider any $\tilde{x}^\star \in \mathrm{Fix}\,T$. Then $x^0,\dots$ lie within the compact set
 $$\{ x \, | \, \| x-x^\star \| \le \| x^0-x^\star \| \}$$
 , thus the sequence has an accumulation point $x^\star$.
 - The accumulation point $x^\star$ satisfies $T(x^\star) = x^\star$, as $T(x^k) - x^k \to 0$ and $T-I$ is continuous. Therefore, $x^\star \in \mathrm{Fix}\,T$.
@@ -136,7 +137,7 @@ The proof is complete.
 
 We now state three examples of optimization algorithms that can be viewed as a fixed-point iteration.
 
-#### Gradient Descent
+### Gradient Descent
 
 For the minimization problem
 
@@ -158,7 +159,7 @@ $$
 
 Therefore, if we take $\alpha \in (0,2/L)$, then the FPI converges as $\theta = \alpha L/2 < 1$. The rate of convergence, as shown in the theorem above, is $O(1/k)$. If $f$ is strongly convex, then the FPI is a contraction.
 
-#### Forward Step Method
+### Forward Step Method
 
 Consider
 
@@ -174,7 +175,7 @@ $$
 
 is the forward step method. The FPI converges if $F$ is $\beta$-cocoersive and $\alpha \in (0,2\beta)$ and the fixed point set is nonempty. The operator is contractive for small $\alpha$ and strongly monotone / Lipschitz $F$.
 
-#### Dual Ascent
+### Dual Ascent
 
 For the primal problem with linear constraints, we have the dual problem
 
@@ -191,11 +192,12 @@ u^{k+1} &= u^k + \alpha (Ax^{k+1}-b)
 \end{aligned}
 $$
 
-If $f$ is $\mu$-strongly convex, then $\nabla g$ is 
+If $f$ is $\mu$-strongly convex, then $\nabla g$ is
 $$
 \sigma^2_{\text{max}}(A)/\mu
 $$
 -Lipschitz. Also, if $f$ is $\mu$-strongly convex, total duality holds, and $0 < \alpha < 2\mu/\sigma^2_{\text{max}}(A)$, then $x^k$ and $u^k$ converge to optimal values.
 
 ## Reference
+
 [1] Ryu, Ernest K., and Wotao Yin. 2022. Large-Scale Convex Optimization. Cambridge, England: Cambridge University Press.

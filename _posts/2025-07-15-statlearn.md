@@ -34,7 +34,7 @@ $$
 L(h) = \expectation_{x' \sim p} \left[ \expectation\left[ l(y,h(x')) | x=x' \right] \right]
 $$
 
-If we define tha _conditional risk_ 
+If we define tha _conditional risk_
 $$r(z|x') = \expectation \left[ l(y,z) | x=x' \right]$$
 , then the risk can be expressed as the sum (or integral) dependent on a single value of $f$. Therefore, minimizing the expected risk can be thought of as finding the _pointwise_ minimum $h(x')$ for any $x' \in X$ independently - furthermore, such a function value $h(x')$ must be chosen as the minimizer $z$ of $r(z|x')$.
 

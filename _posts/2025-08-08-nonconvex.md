@@ -36,14 +36,6 @@ We define a map $F : \R^m \to \R^n$ such that $F(w) = y = [y_1,\dots,y_n]^\top$.
 
 For a local minima $w^* $, we generally do not expect the gradient to vanish.
 
-## Convergence to Local Minima
-
-In general it is not true that $\nabla f = 0$ and $\nabla^2 f \succeq 0$ implies $x$ is a local minima. Therefore, we have to consider a stronger condition, known as the _strict-saddle_ condition[3].
-
-> **Theorem** Suppose $f$ is a function that satisfies the following condition: $\exists\,\varepsilon_0,\tau_0,c > 0$ such that if $\vert f(x) \vert_2 \le \varepsilon < \varepsilon_0$ and $\nabla^2 f(x) \succeq \tau_0 I$, then $x$ is $\varepsilon^c$-close to a local minimum of $f$. Then GD (and SGD, etc.) can converge to a local minimum of $f$ up to $\delta$-error in Euclidean distance in time $poly(1/\delta, 1/\tau_0, d)$.
-
-In such a case, optimizers can effectively find the local minima without being stuck in a saddle point.
-
 ## When is GD Effective?
 
 > **Definition** (Polyak-Łojasiewicz conditions) For a (possibly non-convex) function $f$, suppose a minimizer $x^* $ exists (need not be unique). Also suppose it satisfies the _$\mu$-PL_ inequality.
