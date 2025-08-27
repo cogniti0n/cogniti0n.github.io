@@ -34,7 +34,7 @@ We define a map $F : \R^m \to \R^n$ such that $F(w) = y = [y_1,\dots,y_n]^\top$.
 > - $\nabla \mathcal{L}(w^* ) \ne 0$
 > - For at least one $i$, $\mathrm{rank}(\nabla^2 F_i(w^* )) > 2n$
 
-For a local minima $w^* $, we generally do not expect the gradient to vanish.
+For a local minima $w^* $, we generally do not expect the gradient to vanish. Therefore, the conditions of the proposition are well-established.
 
 ## When is GD Effective?
 
