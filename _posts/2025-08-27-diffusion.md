@@ -157,5 +157,5 @@ which was shown to perform better empirically. The final idea used in the DDPM m
 
 ## References
 
-[1] Sohl-Dickstein, J., Weiss, E. A., Maheswaranathan, N., & Ganguli, S. (2015). Deep Unsupervised Learning using Nonequilibrium Thermodynamics. In arXiv [cs.LG]. arXiv.
+[1] Sohl-Dickstein, J., Weiss, E. A., Maheswaranathan, N., & Ganguli, S. (2015). Deep Unsupervised Learning using Nonequilibrium Thermodynamics. In arXiv [cs.LG]. arXiv. \
 [2] Ho, J., Jain, A., & Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. In arXiv [cs.LG]. arXiv.

@@ -32,7 +32,7 @@ Consider a sequence of $N$ input vectors $$\{h_i\}^N_{i=1} \subset \R^{D}$$ writ
 \end{bmatrix}
 > $$
 >
-> Where each attention head is defined as
+> (the $\mathbf{H}$ term represents a residual connection) Where each attention head is defined as
 >
 > $$
 \text{head}_m = (\mathbf{V}_m \mathbf{H})\,\text{softmax}\left(\frac{(\mathbf{K_m} \mathbf{H})^T (\mathbf{Q_m} \mathbf{H})}{\sqrt{d_k}}\right)
@@ -50,10 +50,10 @@ After performing layer normalization, the output is passed through a standard ML
 >
 > Where $\sigma$ is the standard $\mathrm{ReLU}$ activation.
 
-Finally, layer normalization is performed, and the output is cached to serve as the value and key inputs to the decoder multi-head attention layer.
-
-The process of adding $\mathbf{H}$ with the transformed attention output stems from the idea of a _residual connection_, which is the core idea of the ResNet CNN architecture.
+Layer normalization is performed between each step, and the output is cached to serve as the value and key inputs to the decoder multi-head attention layer.
 
 ### Decoder Architecture
 
 We define a _masked_ multi-head attention. This stems from the fact that guessing the next word is easy if the information about the next word is already given. Therefore, we must 'mask the future' to effectively train the model. By setting all 'future values' with $-\infty$, the softmax function effectively drops to 0.
+
+After passing
