@@ -17,7 +17,3 @@ I am an undergraduate student at Seoul National University, studying electrical 
 ## News
 
 - More to come!
-
-{% include_relative _includes/publications.md %}
-
-{% include_relative _includes/services.md %}
