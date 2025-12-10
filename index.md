@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am an undergraduate student at Seoul National University, studying electrical and computer engineering.
+I am an undergraduate student at Seoul National University.
 
 ## Research Interests
 
