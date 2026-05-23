@@ -84,6 +84,17 @@
   }
 }
 
+.archive__item--publication {
+  .archive__item-authors,
+  .archive__item-venue {
+    margin: 0.1em 0;
+  }
+
+  .archive__item-authors {
+    margin-top: 0.45em;
+  }
+}
+
 
 /*
    List view
