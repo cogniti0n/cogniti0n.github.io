@@ -7,4 +7,4 @@ redirect_from:
   - /about.html
 ---
 
-I am an undergradute student at Seoul National University, department of Electrical and Computer Engineering. I am interested in understanding why modern deep learning works.
+I am an undergradute student at Seoul National University, department of Electrical and Computer Engineering. I am broadly interested in the theory of machine learning, including sequential decision making, reinforcement learning, and optimization. I am also interested in adjacent fields such as computational neuroscience and network science.

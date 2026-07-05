@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale: "en-US"
-site_theme: "sunrise" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme: "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title: "Jungyoon Kim"
 title_separator: "-"
 name: &name "Jungyoon Kim"
@@ -27,7 +27,7 @@ author:
   avatar: "profile.png"
   name: "Jungyoon Kim"
   pronouns: "He/Him."
-  bio: "Undergraduate student at Seoul National University."
+  bio: "Undergraduate student at SNU ECE."
   location: "Seoul, South Korea"
   employer: "Seoul National University"
   uri: # URL

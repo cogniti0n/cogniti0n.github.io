@@ -12,9 +12,23 @@ redirect_from:
 Education
 ======
 
-* B.S. in Electrical and Computer Engineering, Seoul National University (Minor in Mathematical Sciences)
+**Seoul National University** -- Seoul, South Korea  
+B.S. in Electrical and Computer Engineering  
+Minor in Mathematical Sciences  
+2024 -- Present
 
-2024-present
+Research Experience
+======
+
+**Intelligent Wave Systems Laboratory**, Dept. of ECE, Seoul National University  
+Undergraduate Researcher  
+*Advisor: Sunkyu Yu*  
+July 2024 -- May 2026
+
+**Graduate School of Data Science**, Seoul National University  
+Undergraduate Researcher  
+*Advisor: Min-hwan Oh*  
+July 2026 -- present
 
 Publications
 ======
