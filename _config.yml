@@ -12,7 +12,7 @@ site_theme: "air" # The available themes options are "default", "air", "sunrise"
 title: "Jungyoon Kim"
 title_separator: "-"
 name: &name "Jungyoon Kim"
-description: &description "Undergradute student at Seoul National University" # Update this with a general description of your site, this is the default if not overridden by a page
+description: &description "Undergradute student at SNU ECE." # Update this with a general description of your site, this is the default if not overridden by a page
 url:
   https://cogniti0n.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
   # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
@@ -31,7 +31,7 @@ author:
   location: "Seoul, South Korea"
   employer: "Seoul National University"
   uri: # URL
-  email: "cogniti0n@snu.ac.kr"
+  email: "cognition@snu.ac.kr"
 
   # Academic websites
   academia: # URL

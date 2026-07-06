@@ -20,15 +20,15 @@ Minor in Mathematical Sciences
 Research Experience
 ======
 
-**Intelligent Wave Systems Laboratory**, Dept. of ECE, Seoul National University  
-Undergraduate Researcher  
-*Advisor: Sunkyu Yu*  
-July 2024 -- May 2026
-
 **Graduate School of Data Science**, Seoul National University  
 Undergraduate Researcher  
 *Advisor: Min-hwan Oh*  
-July 2026 -- present
+July 2026 -- present  
+
+**Intelligent Wave Systems Laboratory**, Dept. of ECE, Seoul National University  
+Undergraduate Researcher  
+*Advisor: Sunkyu Yu*  
+July 2024 -- May 2026  
 
 Publications
 ======
