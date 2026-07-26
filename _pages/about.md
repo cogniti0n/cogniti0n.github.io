@@ -11,4 +11,4 @@ I am an undergradute student at the department of [Electrical and Computer Engin
 
 I am currently studying under the supervision of Prof. [Min-hwan Oh](https://minoh.io/). My current research topics include **decision making under uncertainty** and **reinforcement learning theory**. I previously studied dynamical neuronal models and open quantum systems from a network science perspective, under the supervision of Prof. [Sunkyu Yu](https://waves.snu.ac.kr/).
 
-I hope to connect adjacent fields of interest, including statistical learning theory, optimization, cognitive science, and network science to construct a dynamical theory of intelligence.
+I enjoy interdisciplinary research, and aim to connect adjacent fields of interest, including statistical learning theory, optimization, cognitive science, and network science, to construct a dynamical, adaptive theory of intelligence.
