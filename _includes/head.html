@@ -9,7 +9,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  (function () {
+    var root = document.documentElement;
+    var storedTheme = null;
+    var prefersDark = window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    try {
+      storedTheme = window.localStorage.getItem("theme");
+    } catch (error) {
+      // localStorage can be unavailable in privacy-restricted browsing contexts.
+    }
+
+    var useDarkTheme;
+    if (storedTheme === "dark" || storedTheme === "light") {
+      useDarkTheme = storedTheme === "dark";
+    } else if (storedTheme === "system") {
+      useDarkTheme = prefersDark;
+    } else {
+      useDarkTheme = root.getAttribute("data-theme") === "dark" || prefersDark;
+    }
+
+    if (useDarkTheme) {
+      root.setAttribute("data-theme", "dark");
+    } else {
+      root.removeAttribute("data-theme");
+    }
+
+    root.className = root.className.replace(/\bno-js\b/g, "") + " js ";
+  }());
 </script>
 
 <!-- For all browsers -->

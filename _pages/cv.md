@@ -23,7 +23,7 @@ Research Experience
 **Graduate School of Data Science**, Seoul National University  
 Undergraduate Researcher  
 *Advisor: Min-hwan Oh*  
-July 2026 -- present  
+June 2026 -- present  
 
 **Intelligent Wave Systems Laboratory**, Dept. of ECE, Seoul National University  
 Undergraduate Researcher  

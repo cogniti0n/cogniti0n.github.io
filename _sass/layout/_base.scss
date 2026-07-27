@@ -5,6 +5,11 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 body {
