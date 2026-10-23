@@ -13,8 +13,8 @@ Education
 ======
 
 **Seoul National University** -- Seoul, South Korea  
-B.S. in Electrical and Computer Engineering  
-Minor in Mathematical Sciences  
+B.S. in Electrical and Computer Engineering    
+B.S. in Mathematical Sciences   
 2024 -- Present
 
 Research Experience
